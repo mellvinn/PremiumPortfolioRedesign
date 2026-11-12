@@ -1,5 +1,9 @@
 # Pamella Vintura — Product Designer portfolio
 
+## Hostinger deployment
+
+This is a static HTML, CSS, and JavaScript website. It intentionally has no `package.json` and does not need a Node.js build. In Hostinger, choose **Deploy as static** and set the project root to `site` (the folder containing `index.html`). The site files are committed in that folder; the repository root contains project documentation and source materials.
+
 The working website is in `site/`. It uses the supplied portfolio as the source for case study text and images.
 
 Each portfolio project now has a local case study page under `site/cases/`. The pages use original project visuals downloaded from the corresponding Framer case studies and link back to the portfolio.
