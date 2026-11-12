@@ -1,0 +1,34 @@
+#!/usr/bin/env python3
+"""Minimal ffprobe-compatible shim for the metadata queries used by the frame slicer."""
+import re
+import subprocess
+import sys
+
+args = sys.argv[1:]
+source = args[-1]
+result = subprocess.run(
+    ["ffmpeg", "-hide_banner", "-i", source, "-f", "null", "-"],
+    stdout=subprocess.PIPE,
+    stderr=subprocess.PIPE,
+    text=True,
+)
+metadata = result.stderr
+query = " ".join(args)
+if "format=duration" in query:
+    match = re.search(r"Duration:\s*(\d+):(\d+):(\d+(?:\.\d+)?)", metadata)
+    if not match:
+        sys.exit("duration unavailable")
+    hours, minutes, seconds = match.groups()
+    print(int(hours) * 3600 + int(minutes) * 60 + float(seconds))
+elif "stream=width" in query:
+    match = re.search(r"Video:.*?,\s*(\d{2,5})x\d{2,5}(?:[,\s])", metadata)
+    if not match:
+        sys.exit("width unavailable")
+    print(match.group(1))
+elif "stream=height" in query:
+    match = re.search(r"Video:.*?,\s*\d{2,5}x(\d{2,5})(?:[,\s])", metadata)
+    if not match:
+        sys.exit("height unavailable")
+    print(match.group(1))
+else:
+    sys.exit("unsupported ffprobe query")

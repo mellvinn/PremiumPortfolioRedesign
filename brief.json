@@ -1,0 +1,115 @@
+{
+  "nome": "Pamella Vintura",
+  "slug": "pamella-vintura",
+  "negocio": "Product Designer",
+  "publico": "Recrutadores, empresas de tecnologia e equipes de produto",
+  "identidade": {
+    "cores": {
+      "fundo": "#090812",
+      "texto": "#f4f0ff",
+      "acento": "#7654e8"
+    },
+    "fontes": {
+      "titulo": "Geist",
+      "texto": "Geist"
+    },
+    "clima": [
+      "moderno",
+      "cinematográfico",
+      "galáctico",
+      "tema escuro",
+      "inspirado na Apple"
+    ],
+    "tema": "escuro"
+  },
+  "logo": null,
+  "copy": {
+    "idioma": "en",
+    "frase_abertura": "Senior Product Designer",
+    "textos_prontos": "Usar e adaptar os textos já publicados no portfólio de referência, sem inventar resultados ou depoimentos.",
+    "depoimentos_reais": [],
+    "perfil_da_referencia": {
+      "experiencia": "8+ years in product design and 12+ years in visual design",
+      "areas": [
+        "product strategy",
+        "user research",
+        "wireframing",
+        "prototyping",
+        "design systems",
+        "cross-functional collaboration"
+      ],
+      "companies_listed": [
+        "Google",
+        "Heineken",
+        "IBM",
+        "Ânima Educação"
+      ],
+      "education": [
+        "Graphic Design, Universidade Cidade de São Paulo",
+        "Postgraduate degree in IT Management, Universidade Anhembi Morumbi"
+      ]
+    }
+  },
+  "referencias": [
+    "https://pamthedesigner.framer.website/",
+    "Sites modernos da Apple com movimento cinematográfico"
+  ],
+  "whatsapp": null,
+  "email_contato": "pamellavinturaa@gmail.com",
+  "secoes": [
+    "abertura",
+    "sobre e abordagem",
+    "projetos selecionados",
+    "contato"
+  ],
+  "projetos": [
+    "One Learning",
+    "Unified Redesign",
+    "Ulife",
+    "Aldeias SOS Brasil",
+    "Student Area"
+  ],
+  "conceito": "Hero com vídeo cinematográfico de tempestade galáctica roxa, rosa e azul; astronauta 3D fofinho da primeira versão, corpo inteiro, recortado sem fundo, menor e centralizado, que aparece ao iniciar a rolagem e acompanha a queda pela home. Tema escuro em toda a página e nas páginas de cada case. A seção final de contato e o footer se unem numa única paisagem lunar fotorrealista, sem nave.",
+  "ajustes_visuais_solicitados": {
+    "hero": "Vídeo de galáxia brilhante com tempestade; astronauta 3D da primeira versão, menor, centralizado e opaco, oculto antes do início da rolagem e caindo pela home; tema escuro em todas as páginas.",
+    "componentes": "Glass translúcido, menos cartões/blocos sólidos, hover nos botões",
+    "botoes": "Roxo",
+    "sobre": "Usar foto profissional da Pamella e incluir LinkedIn https://www.linkedin.com/in/pamellavintura/",
+    "cases": "As imagens iniciais dos cases aparecem como mockups sem painel branco ao redor; as imagens das galerias continuam sobre fundo branco para preservar a leitura.",
+    "projetos": "Cards sobrepostos em sequência com efeito sticky conforme a rolagem, para dar profundidade e movimento.",
+    "about": "Aumentar contraste e destaque das competências, empresas e formação.",
+    "copy": "Posicionar Pamella como Product Design Leader. Usar textos fluidos, naturais e fortes para recrutadores, sem hífens nem travessões; animar os números da seção About.",
+    "footer": "Sem nave. Mesclar visualmente a seção final de contato e o footer como uma única cena contínua com paisagem lunar fotorrealista e galáxia ao fundo."
+  },
+  "modelos": {
+    "video": "google/veo-3.1-fast",
+    "imagem": "bytedance-seed/seedream-5-0-flash"
+  },
+  "estimativa_usd_primeira_geracao": 0.87,
+  "custo_real_usd_primeira_geracao": 0.872,
+  "midia_gerada": {
+    "video": "fonte/abertura.mp4",
+    "frames_desktop": 160,
+    "frames_mobile": 160,
+    "artes_de_apoio": 3
+  },
+  "geracao_hero_openrouter": {
+    "modelo_video": "google/veo-3.1-fast",
+    "modelo_imagem": "bytedance-seed/seedream-5-0-flash",
+    "video": "fonte/hero-galaxy-storm.mp4",
+    "video_site": "site/assets/video/hero-galaxy-storm.mp4",
+    "astronauta_transparente": "site/assets/img/hero-astronaut.webp",
+    "custo_video_usd": 0.8,
+    "custo_recorte": 0,
+    "custo_ajuste_pose_usd": 0.018,
+    "custo_ajuste_proporcoes_usd": 0.018
+  },
+  "aprovacao_conceito": "2026-11-12: usuário respondeu 'ok' após receber o conceito e estimativa.",
+  "custo_total_geracoes_usd_aproximado": 1.816,
+  "geracao_footer_openrouter": {
+    "modelo": "bytedance-seed/seedream-5-0-flash",
+    "imagem": "site/assets/img/footer-lunar-outpost.jpg",
+    "descricao": "paisagem lunar panorâmica sem nave, compartilhada pela seção de contato e pelo footer",
+    "custo_usd": 0.018
+  }
+}
